@@ -105,19 +105,15 @@ fetch("https://jsonplaceholder.typicode.com/todos")
       document.body.appendChild(div) 
        div.innerText = el.title
     });
-
+// map-ov
 
 let newResponse = response.filter(item => item.completed === false)
  console.log(newResponse)
 
- let newResponse1 =[]
  newResponse.forEach(el => {
-  //  if(!(newResponse.title)){
-    el.title = 'none'
-    newResponse1.push(el)
-  // }   
+    el.title = 'none'  
  })
- console.log(newResponse1)
+ console.log(newResponse)
 
 });
  
