@@ -1,14 +1,14 @@
 //1 grel function vor@ stanum e a, b,u   callback function  ogtagorcel callback function@ et functioni mej. is callback function@ sum hashviox function a.
 
-// function f(a, b, cb) {
-//   return cb(a, b);
-// }
+function f(a, b, cb) {
+  return cb(a, b);
+}
 
-// console.log(
-//   f(15, 25, function (a, b) {
-//     return a + b;
-//   })
-// );
+console.log(
+  f(15, 25, function (a, b) {
+    return a + b;
+  })
+);
 
 //2unenq 2array grel function vor@ kveradarnci dranc tarberarutyunner@.
 //arr1 = [5, 6, 7], arr2 = [10, 5, 7, 11]  veradarcni => [10, 11]
