@@ -100,23 +100,20 @@ fetch("https://jsonplaceholder.typicode.com/todos")
   })
   .then(function (response) {
     console.log(response);
-    response.forEach(el => {
-      const div = document.createElement('div')
-      document.body.appendChild(div) 
-       div.innerText = el.title
+    response.forEach((el) => {
+      const div = document.createElement("div");
+      document.body.appendChild(div);
+      div.innerText = el.title;
     });
-// map-ov
+    // map-ov
 
-let newResponse = response.filter(item => item.completed === false)
- console.log(newResponse)
+    let newResponse = response.filter((item) => item.completed === false);
+    console.log(newResponse);
 
- newResponse.forEach(el => {
-    el.title = 'none'  
- })
- console.log(newResponse)
+    newResponse.forEach((el) => {
+      el.title = "none";
+    });
+    console.log(newResponse);
+  });
 
-});
- 
- 
-
-
+// popoxutyun
